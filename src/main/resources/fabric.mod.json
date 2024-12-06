@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "duckistan",
+	"version": "${version}",
+	"name": "Duckistan Once More!",
+	"description": "This mod is the successor of the Duckverse Mod, mainly focuses on improving the mod overall.",
+	"authors": [
+		"AFixy Mert"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/MrAFixy/DuckistanOnceMore"
+	},
+	"license": "MIT",
+	"icon": "assets/duckistan/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.afixy.dommod.DuckistanOnceMore"
+		],
+		"fabric-datagen": [
+			"net.afixy.dommod.DuckistanOnceMoreDataGenerator"
+		],
+		"client": [
+			"net.afixy.dommod.DuckistanOnceMoreClient"
+		]
+	},
+	"mixins": [
+		"duckistan.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
